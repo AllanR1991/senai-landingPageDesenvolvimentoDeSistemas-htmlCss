@@ -1,0 +1,312 @@
+
+/* Importação de uma fonte baixada para o Css */
+@font-face {
+    font-family: "allanFont";
+    src: url(../assets_/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url(../assets_/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid{
+    width: 100%;
+    max-width: 1200px;
+    /* min-width: 930px; */
+    margin: 0 auto;
+    /* border: 2px solid yellow; */
+}
+
+body{
+    background-color: #080324;
+    color: white;
+}
+
+/* Header */
+
+header{
+    height: 60px;
+    background-color: #f9003D;
+}
+
+header .header-flex{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+#menuNav{
+    display: none;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    /* border: 3px solid white; */
+}
+
+header nav a {
+    border-radius: 5px;
+    padding: 15px 25px;
+    
+    font-family: allanFont; /*possivel não utilizar ("") desde que o nome não tenha espaço*/
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 20px black;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+header nav a:hover{
+    color: #F9003D;
+    text-shadow: 0px 0px 5px rgba(249, 0, 61, 0.3);
+    background-color: white;
+}
+
+/* END Header */
+
+/* MAIN */
+/* Cover  aumenta 100 de largura e deica altura auto*/
+/* contain aumenta 100 de alutra e deixa largura auto */
+/* https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php */
+
+/* background-attachment efeito paralax */
+/* Main-Banner */
+main .banner{
+    height: 740px;
+    background-image: url(../assets_/images/bannerDado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+main .banner-flex{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* border: 3px solid white; */
+    
+}
+/* era somente para exibição da borda
+main .banner-flex h1,p,img,#banner-infobox{
+    border: 3px solid yellow;
+}
+*/
+
+main .banner-flex #banner-infobox{
+    width: 560px;
+}
+
+main .banner-flex h1{
+    margin-bottom: 40px;
+    font-family: allanFont;
+    color: white;
+    font-size: 96px;
+}
+
+main .banner-flex p{
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    color: #f9003D;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* END Main-Banner */
+
+/* Main-sobre */
+
+main .sobre{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f9003D; */
+}
+
+main .sobre .sobre-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sobre .sobre-container .sobre-container-coluna1{
+    width: 491px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .sobre .sobre-container .sobre-container-coluna1 h2{
+    font-family: allanFont;
+    font-size: 64px;
+    color: #F9003D;
+    margin-bottom: 64px;
+}
+main .sobre .sobre-container .sobre-container-coluna1 img{
+    width: 491px;
+    height: 476px;
+}
+
+main .sobre .sobre-container .sobre-container-coluna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 592px;
+}
+
+main .sobre .sobre-container .sobre-container-coluna2 h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 18px;
+    
+}
+
+main .sobre .sobre-container .sobre-container-coluna2 h4{
+    margin-bottom: 18px;
+
+    font-family: allanFont;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+    color: #ffaf00;
+}
+
+main .sobre .sobre-container .sobre-container-coluna2 p{
+    font-family: open-sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    color: #ffffff;
+}
+
+/* END Main-sobre */
+
+
+/* Main-Info*/
+
+main .informativo{
+    background-image: url(../assets_/images/imagem-fundo-info.png);
+    height: 200px;
+    
+}
+
+main .informativo-flex{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ffffff; */
+}
+
+
+main .informativo .informativo-flex h5{
+    width: 288px;
+    height: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+    line-height: 27.19px;
+}
+
+main .informativo .informativo-flex .informativo-content-box{
+    width: 289px;
+    height: 100px;
+    border: 1px solid #A259F7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .informativo .informativo-content-box P{
+    box-sizing: content-box;
+    width: 213.42PX;
+    height: 34px;
+    padding: 33px 37.79px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #A259F7;
+}
+
+/* Main-Info*/
+
+/* END MAIN */
+
+/* Footer */
+footer .fundoEndereco{
+    background-image: url(../assets_/images/imagem-fundo-enderecopng.png);
+    height: 516px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .endereco{
+    width: 899px;
+    height: 203.36px;
+    margin: 0 auto;
+}
+
+footer .endereco h6{
+    font-family: allanFont;
+    font-size: 64px;
+    font-weight: 400;
+    color: #ffaf00;
+}
+
+footer .enderecoEMap{
+    border: 1px solid #A259F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer .enderecoEMap p{
+    box-sizing: content-box;
+    margin-left: 66px;
+    width: 435px;
+    height: 87.5px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    color: #A259F7;
+
+}
+
+footer .enderecoEMap img{
+    position: relative;
+    top:-74.43px;
+    margin-right: 25px;  
+}
+
+footer .fundoVermelho{
+    background-color: #F9003D;
+}
+
+footer .copyright{
+    height: 82px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

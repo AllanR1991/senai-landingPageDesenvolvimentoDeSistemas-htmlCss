@@ -1,0 +1,40 @@
+@media screen and (max-width: 769px) {
+    /* .header-flex nav{
+        display: block;
+    } */
+
+.mostrarMenu{
+        left:0;
+        opacity: 1;
+}
+
+    main,footer{
+        display: none;
+    }
+    
+    #menuNav{
+        display: block;
+    }
+
+    header nav{
+        position: fixed;
+        top:60px;
+        left: -80VW;
+        width: 80VW;
+        height: 100VH;
+        /* height: calc(100%-60%); */
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #f9003d;
+
+        opacity: 0;
+        transition: left 0.8s; opacity: 0.5;
+    }
+
+    header nav a{
+        border-left: 2px dashed #fff ;
+    }
+
+
+    
+}
