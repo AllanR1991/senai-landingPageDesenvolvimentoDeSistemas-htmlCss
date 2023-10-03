@@ -1,4 +1,4 @@
-# Landing Page Sistemas de Desenvolvimento
+# Landing Page Desenvolvimento de Sistemas
 
 Está atividade foi realizado junto com os professores para entendimento de html e css.
 
